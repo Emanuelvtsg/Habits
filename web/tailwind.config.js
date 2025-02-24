@@ -30,12 +30,16 @@ export default {
           '0%': { opacity: 1, transform: 'translate(-50%, -50%) scale(1)' },
           '100%': { opacity: 0, transform: 'translate(-50%, -50%) scale(0.95)' },
         },
+        strike: {
+          '0%': {animation: 'strike 4s linear'}
+        } 
       },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-out',
         fadeOut: 'fadeOut 0.2s ease-in',
         zoomIn: 'zoomIn 0.3s ease-out',
         zoomOut: 'zoomOut 0.2s ease-in',
+        lineStrikeIn: 'strike 4s linear',
       },
     },
   },

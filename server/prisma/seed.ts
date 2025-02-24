@@ -115,6 +115,19 @@ async function run() {
         },
       },
     }),
+
+    prisma.day.create({
+      data: {
+        /** quarta */
+        date: new Date("2025-01-01T03:00:00.000z"),
+        dayHabits: {
+          create: [
+            { habit_id: firstHabitId }, 
+            { habit_id: secondHabitId }
+          ],
+        },
+      },
+    }),
   ]);
 }
 
