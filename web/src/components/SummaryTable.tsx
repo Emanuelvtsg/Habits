@@ -54,6 +54,7 @@ export function SummaryTable() {
                     .from({ length: amountOfDaysTillFirstDayOfYear })
                     .map((_, i) => (
                         <div
+                            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                             key={i}
                             className="w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg opacity-40 cursor-not-allowed"
                             />
